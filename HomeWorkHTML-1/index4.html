@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      table {
+        margin: auto;
+        width: 400px;
+        height: 100px;
+        font-size: larger;
+      }
+      th {
+        font-weight: bolder;
+        border: 1px solid;
+      }
+      td {
+        border: 1px solid;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+      <tr>
+        <td colspan="2">Row 1 Columns 1-2</td>
+        <td class="center">Row 1 Column 3</td>
+      </tr>
+      <tr>
+        <td colspan="3">Row 2 Columns 1-3</td>
+      </tr>
+    </table>
+  </body>
+</html>
