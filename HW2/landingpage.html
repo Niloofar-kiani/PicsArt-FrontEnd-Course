@@ -311,12 +311,23 @@
       <section id="contact">
         <h3>Contact Us</h3>
         <div class="container">
-          <input type="checkbox" id="news" />
+          <form action="" method="post">
+            <div>
+              <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments">
+  
+            </textarea>
+            </div>
+            <input type="checkbox" id="news" />
+            <label for="news">Send me the Menu via Email</label>
+            <input type="email" placeholder="Email 📥">
+            <input type="submit" value="Submit">
+            </form>
           
-          <label for="news">Send me the Menu via Email</label>
-          <input type="email" placeholder="Email 📥">
+          
+         
           <br />
-          Send us your photos of our foods.<input type="file" />
+          Send us your photos of our foods.<input type="file" id="file" name="file"  multiple/>
           <br>
           <address>📍 Address : Yerevan | Armenia</address>
          
