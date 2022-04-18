@@ -97,15 +97,28 @@
       <h1>Sign Up</h1>
       <p>It's quick and easy.</p>
       <hr />
+      <audio src="audio.mp3" controls autoplay muted style="width: 96%">
+        Your browser does not support the audio element.
+      </audio>
       <form action="">
-        <input class="name" type="text" placeholder="First Name" />
-        <input class="name" type="text" placeholder="Last" />
+        <input class="name" type="text" placeholder="First Name" required />
+        <input class="name" type="text" placeholder="Last" required />
         <br />
-        <input class="text" type="email" placeholder="Email" /><br />
+        <input class="text" type="email" placeholder="Email" required /><br />
 
-        <input class="text" type="email" placeholder="Confirm Email" /><br />
+        <input
+          class="text"
+          type="email"
+          placeholder="Confirm Email"
+          required
+        /><br />
 
-        <input class="text" type="password" placeholder="Password" /><br />
+        <input
+          class="text"
+          type="password"
+          placeholder="Password"
+          required
+        /><br />
         <br />
         <div style="display: flex">
           <label for="Birthday">Birthday</label>
