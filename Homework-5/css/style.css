@@ -1,12 +1,13 @@
 header > h1 {
-  font-family: inherit;
   text-align: center;
   font-weight: 500;
+  font-family: inherit;
 }
 .header-hr {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  font-family: inherit;
 }
 .nav-header,
 .nav-footer {
@@ -51,7 +52,6 @@ section {
   color: rgb(61, 61, 61);
 }
 h3 {
-  font-family: inherit;
   text-align: center;
   font-weight: 300;
   font-size: 30px;
@@ -67,7 +67,7 @@ select {
   padding: 5px 8px;
   background-color: hsla(100, 20%, 50%, 1);
   color: inherit;
-  font-family: inherit;
+
   position: absolute;
   right: 10px;
 }
@@ -105,7 +105,6 @@ select {
   padding: 5px 8px;
   background-color: black;
   color: #ecf0f1;
-  font-family: inherit;
   position: absolute;
   top: 200px;
   right: 100px;
@@ -115,13 +114,21 @@ select {
   background-color: #ff7675;
   color: black;
 }
+.contact {
+  border: 1px solid;
+  padding: 15px;
+}
+.sendemail {
+  border: inherit;
+  padding: inherit;
+}
 textarea {
-  font-family: "Plus Jakarta Sans", sans-serif;
   resize: none;
   padding: 22.5px;
   height: 80px;
-  width: 70%;
+  width: 89%;
   display: block;
+  margin-left: 5px;
 }
 
 footer {
