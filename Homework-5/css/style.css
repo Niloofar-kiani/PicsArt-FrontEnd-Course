@@ -1,4 +1,4 @@
-header > h1 {
+#home {
   text-align: center;
   font-weight: 500;
   font-family: inherit;
@@ -81,6 +81,11 @@ select {
   margin: 30px auto;
   width: 78%;
   position: relative;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif !important ;
+}
+.p-style {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .ul-class {
@@ -106,7 +111,7 @@ select {
   background-color: black;
   color: #ecf0f1;
   position: absolute;
-  top: 200px;
+  top: 250px;
   right: 100px;
 }
 .btn-comment:hover {
