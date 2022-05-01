@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boxes 03</title>
+    <style>
+      ul {
+        list-style-type: none;
+        line-height: 40px;
+        text-align: center;
+      }
+      ul li {
+        display: inline-block;
+      }
+      ul li a {
+        text-decoration: none;
+        border-left: 2px solid purple;
+        padding: 4px;
+        margin: 4px;
+      }
+      .parent {
+        position: relative;
+        background-color: pink;
+        margin: 0 auto;
+        width: 800px;
+        height: 600px;
+        text-align: center;
+        border: 3px solid black;
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .child-1 {
+        background-color: green;
+        position: absolute;
+        width: 700px;
+        height: 400px;
+        top: 65%;
+        left: 50%;
+        margin-left: -350px;
+        margin-top: -250px;
+        border: 3px solid black;
+      }
+      .child-2 {
+        background-color: yellow;
+        border: 3px solid black;
+        width: 600px;
+        height: 150px;
+        top: 55%;
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+      }
+      p {
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>parent</p>
+      <div class="child child-1"><p>child</p></div>
+      <div class="child child-2"><p>element</p></div>
+    </div>
+    <ul>
+      <li>
+        <a href="01.html">First</a>
+      </li>
+      <li>
+        <a href="02.html">Second</a>
+      </li>
+      <li>
+        <a href="03.html">Third</a>
+      </li>
+      <li>
+        <a href="contactus.html">contact us</a>
+      </li>
+    </ul>
+  </body>
+</html>

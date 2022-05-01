@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boxes 01</title>
+    <style>
+      ul {
+        list-style-type: none;
+        line-height: 40px;
+        text-align: center;
+      }
+      ul li {
+        display: inline-block;
+      }
+      ul li a {
+        text-decoration: none;
+        border-left: 2px solid purple;
+        padding: 4px;
+        margin: 4px;
+      }
+      .parent {
+        position: relative;
+        background-color: rgb(252, 206, 56);
+        margin: 0 auto;
+        width: 800px;
+        height: 600px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .child {
+        padding: 50px;
+        background-color: rgb(230, 96, 196);
+        border-radius: 5px;
+        color: white;
+        height: 40px;
+        width: 120px;
+        text-align: center;
+        display: inline-block;
+        line-height: 30px;
+      }
+      .child-1 {
+        left: 30px;
+      }
+      .child-2 {
+        top: 180px;
+        left: 220px;
+      }
+      .child-3 {
+        right: 30px;
+      }
+      .child-1,
+      .child-3 {
+        top: 220px;
+        border: 8px solid white;
+        position: absolute;
+      }
+      .child-2 {
+        border: 8px solid purple;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child-1">Child 01</div>
+      <div class="child child-2">Child 02</div>
+      <div class="child child-3">Child 03</div>
+    </div>
+    <ul>
+      <li>
+        <a href="01.html">First</a>
+      </li>
+      <li>
+        <a href="02.html">Second</a>
+      </li>
+      <li>
+        <a href="03.html">Third</a>
+      </li>
+      <li>
+        <a href="contactus.html">contact us</a>
+      </li>
+    </ul>
+  </body>
+</html>
