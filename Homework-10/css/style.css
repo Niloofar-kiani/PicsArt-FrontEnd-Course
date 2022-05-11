@@ -1,0 +1,222 @@
+#home {
+  text-align: center;
+  font-weight: 600;
+  font-family: inherit;
+}
+h1 {
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 187, 0),
+    0 0 5px rgb(139, 90, 0);
+}
+.header-hr {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
+}
+.nav-header,
+.nav-footer {
+  text-align: center;
+  margin: 30px;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.nav-header > a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: initial;
+}
+.nav-header > a:hover {
+  color: hsl(300, 60%, 50%);
+}
+section {
+  margin: 5px 1px 50px 1px;
+}
+.chef-image {
+  display: block;
+  width: calc(100% - 100px);
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+}
+.div-image {
+  display: block;
+  padding: 14px 8px 15px 9px;
+  margin: 30px auto;
+  width: max(78%, 550px);
+}
+
+.foods {
+  font-size: 14px;
+  text-align: left;
+}
+.qoute-style {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin: 30px auto;
+  width: min(80%, 1300px);
+  font-size: 40px;
+  color: rgb(61, 61, 61);
+}
+.ads:hover {
+  visibility: hidden;
+}
+h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+input,
+select {
+  margin: 5px 10px;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.fullname:focus {
+  background-color: yellow;
+}
+.email:invalid {
+  border: 2px solid rgb(245, 94, 94);
+}
+.btn {
+  padding: 5px 8px;
+  background-color: hsla(100, 20%, 50%, 1);
+  color: inherit;
+  right: calc(15% - 20px);
+  position: absolute;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #9b59b6;
+  color: black;
+}
+.container {
+  display: block;
+  margin: 30px auto;
+  width: 78%;
+  position: relative;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif !important ;
+}
+.p-style {
+  font-family: "Times New Roman", Times, serif;
+}
+.p-style::first-letter {
+  font-size: x-large;
+  color: tomato;
+}
+.p-style::first-line {
+  color: rgb(124, 4, 4);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ul-class {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.li-class {
+  width: 200px;
+  text-align: center;
+  margin-right: 52px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.li-class > img {
+  width: calc(80% - 10px);
+  height: 130px;
+}
+li::marker {
+  color: indigo;
+}
+.btn-comment {
+  padding: 5px 8px;
+  background-color: black;
+  color: #ecf0f1;
+  position: absolute;
+  top: 200px;
+  right: calc(5% - 10px);
+}
+.btn-comment:hover {
+  cursor: pointer;
+  background-color: #ff7675;
+  color: black;
+}
+.contact {
+  border: 1px solid;
+  padding: 15px;
+}
+.sendemail {
+  border: inherit;
+  padding: inherit;
+  width: max(93%, 300px);
+  margin: 0 auto;
+}
+textarea {
+  resize: none;
+  display: block;
+  padding: 15px;
+  height: 80px;
+  width: max(93%, 300px);
+  margin: 0 auto;
+}
+footer {
+  margin-top: 150px;
+  height: 300px;
+  background-color: rgba(82, 81, 81, 0.5);
+  color: white;
+  font-size: 14px;
+}
+.icon-footer {
+  text-align: center;
+}
+.icon-footer > a {
+  margin: 10px 12px 8px 9px;
+}
+.nav-footer > a:link {
+  margin: 0 8px;
+  text-decoration: none;
+  color: initial;
+}
+.nav-footer > a:hover {
+  cursor: pointer;
+  color: unset;
+}
+.nav-footer > a:active {
+  cursor: pointer;
+  color: revert;
+}
+.nav-footer > a:visited {
+  cursor: pointer;
+  color: rgb(112, 90, 207);
+}
+.foods:nth-child(2) {
+  background-color: rgb(230, 228, 228);
+  border-radius: 10px;
+}
+
+.ads {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(179, 178, 178, 0.6);
+  z-index: 10;
+  width: min(40%, 65px);
+  height: 400px;
+  text-align: center;
+  opacity: 0.9;
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: peachpuff;
+  }
+  .ads {
+    display: none;
+  }
+}
