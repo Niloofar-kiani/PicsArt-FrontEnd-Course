@@ -116,6 +116,8 @@ h1 {
 .gimage img {
   width: 350px;
   height: 250px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .glogo {
   position: absolute;
