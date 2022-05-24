@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 20px;
+      }
+      .main {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .grid {
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 15px;
+        grid-column-gap: 10px;
+      }
+      .item {
+        width: 100px;
+        height: 80px;
+        background: rgba(255, 166, 0, 0.9);
+        border: 2px solid black;
+        border-radius: 10px;
+        position: relative;
+      }
+      .item:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 6px;
+        top: 6px;
+        background-color: rgba(155, 147, 133, 0.7);
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        z-index: -1;
+      }
+      .link {
+        margin: 30px;
+      }
+      .link a {
+        text-decoration: none;
+        background-color: rgb(59, 199, 59);
+        padding: 10px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="grid">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+    <div class="link">
+      <a href="index3.html">>>Go to index 3.</a>
+    </div>
+  </body>
+</html>

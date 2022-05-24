@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index3</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .grid {
+        max-width: 500px;
+        height: 300px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+      }
+      .item1 {
+        background-color: orange;
+        border: 1px solid black;
+        border-radius: 15px;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .item2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .i1 {
+        background-color: paleturquoise;
+        border: 1px solid rgb(8, 180, 248);
+        border-radius: 15px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .i2 {
+        background-color: white;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .i3 {
+        background-color: rgb(231, 100, 77);
+        border: 1px solid tomato;
+        border-radius: 15px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .item3 {
+        background-color: palegreen;
+        border: 1px solid rgb(52, 241, 4);
+        border-radius: 15px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .link {
+        margin: 30px;
+      }
+      .link a {
+        text-decoration: none;
+        background-color: rgb(156, 209, 96);
+        padding: 10px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item1">header</div>
+      <div class="item2">
+        <div class="i1">main</div>
+        <div class="i2">empty</div>
+        <div class="i3">sidebar</div>
+      </div>
+      <div class="item3">footer</div>
+    </div>
+
+    <div class="link">
+      <a href="index4.html">>>Go to index 4.</a>
+    </div>
+  </body>
+</html>
