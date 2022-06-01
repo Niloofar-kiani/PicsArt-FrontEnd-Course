@@ -1,0 +1,36 @@
+$colors: (
+  primary: rgba(148, 187, 233, 1),
+  accent: rgba(100, 100, 100, 0.3),
+);
+
+body {
+  background-color: map-get($colors, primary);
+  display: flex;
+}
+.icons {
+  position: sticky;
+  top: 60px;
+  height: 250px;
+  border-radius: 10px;
+
+  a {
+    text-decoration: none;
+
+    img {
+      display: block;
+      transition: transform 0.8s;
+    }
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+}
+.content {
+  margin-left: 15px;
+  h1 {
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.253);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    height: 80px;
+    width: 100vw;
+  }
+}
+
+.sidebar nav {
+  margin: 15px;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .sidebar nav {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.sidebar nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+  color: rgba(7, 7, 7, 0.712);
+  margin-bottom: 10px;
+  -webkit-transition: -webkit-transform ease-in-out 1s;
+  transition: -webkit-transform ease-in-out 1s;
+  transition: transform ease-in-out 1s;
+  transition: transform ease-in-out 1s, -webkit-transform ease-in-out 1s;
+}
+
+@media (max-width: 800px) {
+  .sidebar nav a {
+    margin-right: 15px;
+  }
+}
+
+.sidebar nav a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  -webkit-transition: -webkit-transform ease-in-out 1s;
+  transition: -webkit-transform ease-in-out 1s;
+  transition: transform ease-in-out 1s;
+  transition: transform ease-in-out 1s, -webkit-transform ease-in-out 1s;
+}
+
+.sidebar nav a img:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sidebar nav a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container {
+  margin-left: 15px;
+}
+
+.container h1 {
+  font-size: 25px;
+}
+
+.container p {
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */

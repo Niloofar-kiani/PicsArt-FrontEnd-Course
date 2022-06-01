@@ -1,0 +1,44 @@
+body {
+  background-color: #94bbe9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons a img {
+  display: block;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.icons a:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.content {
+  margin-left: 15px;
+}
+
+.content h1 {
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
