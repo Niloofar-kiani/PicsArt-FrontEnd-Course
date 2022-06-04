@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import "variables";
+@import "global";
+@import "mixin";
+
+.pricing-table-container {
+  .pricing-header {
+    .h2secondary {
+      display: none;
+    }
+    @include flexCenter;
+    @include desktop {
+      .h2secondary {
+        display: block;
+      }
+      .h2primary {
+        display: none;
+      }
+    }
+
+    h2 {
+      margin-right: 20px;
+    }
+
+    .plans-switch-container {
+      position: relative;
+      color: $white;
+      display: inline-block;
+
+      .plans-switch {
+        width: 250px;
+        background: $light-purple;
+        height: 55px;
+        appearance: none;
+        border-radius: 28px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 45px;
+          width: 120px;
+          border-radius: 24px;
+          background: $blue-light;
+          top: 9%;
+          // transform: translateY(-50%);
+          left: 6px;
+        }
+      }
+      .monthly {
+        @include plans-switch-position;
+        left: 30px;
+      }
+      .yearly {
+        @include plans-switch-position;
+        right: 30px;
+      }
+    }
+  }
+  .pricing-table {
+    margin-top: 32px;
+    @include flexCenter;
+    @include desktop {
+      flex-direction: column;
+    }
+    .table {
+      width: 260px;
+      padding: 32px;
+      position: relative;
+      background-color: $table-bg;
+      background-image: url(../img/bg-shape1.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+      border-radius: 25px;
+      overflow: hidden;
+
+      .btn {
+        background: $blue-light;
+        padding: 16px 0;
+        display: inline-block;
+        width: 100%;
+        color: $black;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 16px;
+        transition: all 400ms;
+        &:hover {
+          background: $value-hover;
+        }
+      }
+
+      &.best-value {
+        color: $white;
+        padding-top: 70px;
+        background-color: $best-bg;
+        background-image: url(../img/bg-shape2.svg);
+        .value {
+          background-color: $value-bg;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 20px;
+          padding: 10px;
+          text-align: center;
+        }
+        .btn {
+          background: #ffd166;
+          padding: 16px 0;
+          display: inline-block;
+          width: 100%;
+          color: $white;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 25px;
+          margin-top: 16px;
+          transition: all 400ms;
+          &:hover {
+            background: #f0b11c;
+          }
+        }
+      }
+      .content {
+        h3 {
+          font-size: 24px;
+          margin-bottom: 13px;
+        }
+        .price-container {
+          @include flexCenter($justify: false);
+          margin-bottom: 20px;
+        }
+      }
+      .price {
+        font-size: 56px;
+        font-weight: bold;
+        padding-right: 16px;
+      }
+      .description {
+        font-size: 15px;
+
+        margin-bottom: 20px;
+      }
+      .features {
+        list-style: none;
+        li {
+          margin: 4px 0;
+          &::before {
+            margin-right: 10px;
+            content: url(../img/check-icon.svg);
+          }
+        }
+      }
+    }
+  }
+}

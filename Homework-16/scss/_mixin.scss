@@ -1,0 +1,19 @@
+@mixin flexCenter($justify: true) {
+  display: flex;
+  align-items: center;
+
+  @if $justify {
+    justify-content: center;
+  }
+}
+
+@mixin plans-switch-position {
+  position: absolute;
+  top: 18px;
+  pointer-events: none;
+}
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
