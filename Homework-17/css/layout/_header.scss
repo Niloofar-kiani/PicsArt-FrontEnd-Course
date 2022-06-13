@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+
+.header {
+  width: 85.7%;
+  margin: 1.4rem auto;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      align-self: center;
+      flex: 1;
+      img {
+        width: 80%;
+      }
+    }
+    .navbar {
+      flex: 3;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        li {
+          a {
+            text-decoration: none;
+            color: $primary-text;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            .btn-mem {
+              padding: 1.5rem 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

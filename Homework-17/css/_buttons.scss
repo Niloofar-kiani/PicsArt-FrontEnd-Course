@@ -1,0 +1,31 @@
+.btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  border: 2px solid $primary-text;
+}
+.btn-secondary {
+  border: 2px solid $primary-text;
+  background-color: $white;
+  padding: 2rem 4rem;
+  color: $color-primary;
+  margin: 1rem;
+}
+.btn-primary {
+  border: 2px solid $primary-text;
+  background: $color-primary;
+  color: $white;
+  padding: 2rem 4rem;
+  margin: 1rem;
+}
+.btn-secondary-white {
+  border: 2px solid $white;
+  background: none;
+  padding: 2rem 4rem;
+  color: $white;
+}
